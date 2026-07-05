@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    DOCKER_CRED = credentials('DockerHub')
+    DOCKER_CRED = credentials('Docker')
   }
   stages {
     stage('fetch-code') {
